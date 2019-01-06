@@ -8,6 +8,4 @@ all: $(TARGETS)
 	latexmk -pdf $^
 
 clean:
-	rm -f *.aux
-	rm -f *.log
-	rm -f *.out
+	latexmk -C
