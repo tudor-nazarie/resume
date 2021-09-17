@@ -11,7 +11,10 @@
 \titleformat*{\section}{\color{blue!60!green!40!black}\vspace{8pt}\titlerule\vspace{4pt}\Large\bfseries\sffamily\raggedright\lowercase}
 
 \titlespacing{\subsection}{0pt}{4pt plus 2pt minus 2pt}{0pt plus 2pt minus 2pt}
-\titleformat*{\subsection}{\color{blue!60!green}\vspace{2pt}\bfseries\sffamily\raggedright}
+\titleformat*{\subsection}{\color{blue!60!black}\vspace{2pt}\bfseries\sffamily\raggedright}
+
+\titlespacing{\subsubsection}{0pt}{4pt plus 2pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titleformat*{\subsubsection}{\color{blue!60!green}\vspace{0pt}\small\sffamily\raggedright}
 
 \renewcommand{\familydefault}{\sfdefault}
 
@@ -49,38 +52,52 @@
 \end{center}
 
 \section*{Education}
-\subsection*{MEng in Computing (Artificial Intelligence), Imperial College
-	London \hfill Sep 2018--Present}
+\subsection*{Imperial College}
+\subsubsection*{MEng in Computing (Artificial Intelligence) \hfill Sep 2018--Present}
 \begin{itemize}
 	\item Currently in third year of study
 	\item Expected to finish in June 2022
 \end{itemize}
 
-\subsection*{Tudor Vianu National College of Computer Science \hfill 2014--2018}
+\subsection*{Tudor Vianu National High School of Computer Science}
+\subsubsection*{Secondary school student \hfill 2014--2018}
 \begin{itemize}
 	\item Romanian Bacalaureat Diploma with 9.61 GPA out of 10
 	\item Grade 2 in STEP I Mathematics
 	\item Graduated with 9.26 GPA out of 10
 \end{itemize}
 
-\section*{Experience}
-\subsection*{Computer Scientist, Netcraft
-	\hfill Jun 2020--Oct 2020 \\
-	\hfill Dec 2019--Jan 2020 \\
-	\hfill Jul 2019--Sep 2019}
+\section*{Work Experience}
+\subsection*{Qube Research \& Technologies}
+\subsubsection*{Quantitative Technologist \hfill Apr 2021--Sep 2021}
 \begin{itemize}
-	\item Maintained and extended Netcraft's anti-phishing takedown solution
-	\item Maintained and extended Netcraft's website security scanning solution\
-	\item Maintained and extended Netcraft's anti-phishing Android application
+	\item Developed, implemented, and packaged an automated test harness to aid in \textbf{low 
+	latency testing}, based on a server-worker architecture, using \textbf{Python}
+	and \textbf{React (Typescript)}.
+	\item Developed a console based application for monitoring cache usage and misses on a 
+	per-core and per-process basis for Intel processors, using \textbf{C++} and offcial Intel APIs.
+	\item Maintained constant communication with both the trading team as well as the technical team
+	to develop and test new ideas, aiming to increase performance of low latency trading algorithms
+	deployed on \textbf{Red Hat}-based Linux operating systems
 \end{itemize}
 
-\subsection*{HaikuOS \hfill Winter 2016}
+\subsection*{Netcraft}
+\subsubsection*{Computer Scientist \hfill Jul 2019--Oct 2020}
+\begin{itemize}
+	\item Maintained and extended Netcraft's \textbf{anti-phishing} takedown 
+	solution, gaining practical \textbf{Perl} experince, website \textbf{security scanning}
+	solution (Perl), and anti-phishing \textbf{Android application}, using \textbf{Java} 
+	and modern Android application development tools, over the course of three internships 
+\end{itemize}
+
+\section*{pre-college experience}
+
+\subsection*{HaikuOS}
 \begin{itemize}
 	\item Ported numerous programs and libraries from Linux to
 	      \href{https://www.haiku-os.org/}{HaikuOS}
 	\item Integrated the ported software with the HaikuOS package manager
 	      (HaikuDepot)
-	\item HaikuOS is an open source operating system based on BeOS
 \end{itemize}
 
 \subsection*{Technical Committee Member, Romanian Master of Informatics \hfill
@@ -97,11 +114,6 @@
 	      the event
 \end{itemize}
 
-\vspace{5pt}
-\href{http://rmi.lbi.ro}{Romanian Master of Informatics} and \href{http://info1cup.com/}{infO(1) Cup} are international, IOI-style
-algorithmic contests for high-school students. Participating countries include
-the Russian Federation, Switzerland, Italy, Bulgaria, Serbia, etc.
-
 \section*{Awards}
 
 \begin{itemize}
@@ -111,19 +123,13 @@ the Russian Federation, Switzerland, Italy, Bulgaria, Serbia, etc.
 	      Communications Officer
 \end{itemize}
 
-\section*{Projects}
-
-\subsection*{Academic Projects}
-\begin{itemize}
-	\item Designed and implemented a mobile app meant to facilitate social distancing on London buses using Flutter SDK and Dart
-\end{itemize}
-
 \section*{Skills}
 
 \subsection*{Programming Languages}
 \begin{itemize}
-	\item Confident with \textbf{Java}/\textbf{Kotlin} and \textbf{Python}, have experience with \textbf{JavaScript}, \textbf{C},
-	      \textbf{PHP}, \textbf{Haskell}, \textbf{Perl}, and \textbf{SQL databases}
+	\item Confident with \textbf{Java}/\textbf{Kotlin} and \textbf{Python}, 
+	previous experience with \textbf{JavaScript}/\textbf{TypeScript}, \textbf{C},
+	\textbf{PHP}, \textbf{Haskell}, \textbf{Perl}, \textbf{SQL}
 	\item Confident with common markup languages such as \textbf{HTML},
 	      \textbf{CSS}, \textbf{{\LaTeX}}, etc.
 	\item Able to learn new languages and technologies rapidly and effectively,
@@ -135,22 +141,21 @@ the Russian Federation, Switzerland, Italy, Bulgaria, Serbia, etc.
 	\item \textbf{Software Development} --- Able to write high-quality code, using
 	      appropriate languages, libraries, frameworks and algorithms and debug,
 	      maintain and build upon existing code
-	\item \textbf{Linux} --- Confident in using the command line, scripting, using
-	      traditional development tools such as Git and administering small to
-	      medium sized networks of servers
-\end{itemize}
+	\item \textbf{Linux}
 
-\section*{Other}
-\begin{itemize}
-	\item Attended the \textbf{International Space Development Conference} 2015
-	      and 2016 (Toronto, CA and San Juan, PR respectively)
+	\begin{itemize}
+		\item Have experience using nad maintaing \textbf{Red Hat}-like distributions (e.g. 
+		\textbf{CentOS, Rocky Linux}), including writing \textbf{RPM} specfiles to facilitate 
+		reproducible software installations
+		\item Confident in using the command line, scripting, using traditional development 
+		tools such as Git, administering networks of servers
+	\end{itemize}
 \end{itemize}
 
 \subsection*{Languages}
 \begin{itemize}
 	\item Native \textbf{Romanian}
 	\item Fluent \textbf{English} (CAE C2)
-	\item Limited \textbf{German} and \textbf{French}
 \end{itemize}
 
 \end{document}
