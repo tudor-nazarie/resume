@@ -1,22 +1,6 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper]{mcdowellcv}
 
-\usepackage[margin=25pt]{geometry}
-\usepackage{multicol}
-\usepackage{nopageno}
-\usepackage[document]{ragged2e}
-\usepackage{xcolor}
-
-\usepackage{titlesec}
-\titlespacing{\section}{0pt}{4pt plus 2pt minus 2pt}{0pt plus 2pt minus 2pt}
-\titleformat*{\section}{\color{blue!60!green!40!black}\vspace{8pt}\titlerule\vspace{4pt}\Large\bfseries\sffamily\raggedright\uppercase}
-
-\titlespacing{\subsection}{0pt}{4pt plus 2pt minus 2pt}{0pt plus 2pt minus 2pt}
-\titleformat*{\subsection}{\color{blue!60!black}\vspace{2pt}\bfseries\sffamily\raggedright}
-
-\titlespacing{\subsubsection}{0pt}{4pt plus 2pt minus 2pt}{0pt plus 2pt minus 2pt}
-\titleformat*{\subsubsection}{\color{blue!60!green}\vspace{0pt}\small\sffamily\raggedright}
-
-\renewcommand{\familydefault}{\sfdefault}
+\usepackage{amsmath}
 
 \usepackage{hyperref}
 \hypersetup{
@@ -24,140 +8,93 @@
 	urlcolor=blue!60!black
 }
 
-\usepackage{enumitem}
-\setlist{leftmargin=*, noitemsep, topsep=0pt}
-
-\setlength\parindent{0pt}
-\setlength\parskip{0pt}
+\name{Tudor-Adrian Nazarie}
+\address{+44 7445708404 \linebreak \href{mailto:tudor@nazarie.net}{tudor@nazarie.net}}
+\contacts{London, \linebreak United Kingdom}
 
 \begin{document}
 
-\begin{center}
-	{\huge\sffamily Tudor-Adrian Nazarie}
+\makeheader
 
-	\vspace{4pt}
+\begin{cvsection}{Work Experience}
 
-	Department of Computing, Huxley Building, 180 Queen's Gate, Imperial
-	College London,\\ London SW7 2AZ
+	\begin{cvsubsection}{Full Stack Engineer/DevOps}{Solidatus}{Fall 2022 -- Present}
+		\begin{itemize}
+			\item Contributed to the development of a world-class data lineage and data management software.
+			\item Worked on both front-end and back-end features for a modern, enterprise-grade web application.
+			\item Improved and maintained the infrastructure supporting the development team, as needed.
+			\item Was responsible for deploying and maintaining a fleet of different cloud services supporting the business.
+			\item Designed, developed, and deployed an automated pipeline for gathering metrics and logs from production
+			      environments, used to develop crucial business and pricing strategies.
+			\item Maintained and improved the CI/CD pipeline for the development team, from code commit to deployment.
+			\item Technologies used:
+			      \begin{itemize}
+				      \item Software development: \textbf{ASP.NET Core (C\#), React (TypeScript), CSS, SASS, Rust, Bash}
+				      \item Cloud infrastructure: \textbf{Google Cloud Platform, Kubernetes, Terraform, Docker}
+				      \item CI/CD: \textbf{GitHub Actions, JetBrains TeamCity}
+			      \end{itemize}
+		\end{itemize}
+	\end{cvsubsection}
 
-	\vspace{4pt}
+	\begin{cvsubsection}{Quantitative Technologist}{Qube Research \& Technologies}{Apr 2021 -- Sep 2021}
+		\begin{itemize}
+			\item 6 month industry placement as part of my master's degree at Imperial College London.
+			\item Developed, implemented, and packaged an automated test harness to aid in \textbf{low latency testing},
+			      based on a server-worker architecture.
+			\item Developed a console based application for monitoring cache sage and misses on a per-core and per-process
+			      for Intel processors, using official Intel APIs.
+			\item Maintained constant communication with both the trading team as well as the technical team to develop and
+			      test new ideas, aiming to increase performance of low latency, high frequency trading strategies.
+			\item Technologies used: \textbf{Flask (Python), React (TypeScript), C++, RHEL (RPM packaging)}
+		\end{itemize}
+	\end{cvsubsection}
 
-	\href{mailto:tn4618@ic.ac.uk}{tn4618@ic.ac.uk}
-	\href{mailto:tudor@nazarie.net}{tudor@nazarie.net}
+	\begin{cvsubsection}{Computer Scientist}{Netcraft}{Jul 2019 -- Oct 2020}
+		\begin{itemize}
+			\item Experience split over the course of three internships.
+			\item Maintained and extended the company's \textbf{anti-phishing} take down solution.
+			\item Helped develop an anti-phishing native Android application.
+			\item Technologies used: \textbf{PHP, Perl, Java (Android)}
+		\end{itemize}
+	\end{cvsubsection}
 
-	% TODO: fix the website before adding a link
-	% \href{https://n.azarie.net}{n.azarie.net}
+\end{cvsection}
 
-	\vspace{-12pt}
-\end{center}
+\begin{cvsection}{Education}
 
-\section*{Education}
-\subsection*{Imperial College}
-\subsubsection*{MEng in Computing (Artificial Intelligence) \hfill Sep 2018--Present}
-\begin{itemize}
-	\item Currently in fourth year of study
-	\item Expected to finish in June 2022
-\end{itemize}
+	\begin{cvsubsection}{MEng Computing (Artificial Intelligence)}{Imperial College London}{2018 -- 2022}
+		\begin{itemize}
+			\item Graduated with Upper Second Class Honours.
+			\item Undergraduate courseworks: Pintos (Operating Systems module), WACC (Compilers module)
+			\item Fourth year personal project title: \textbf{``Automated Adversary Emulation using Reinforcement Learning''}.
+		\end{itemize}
+	\end{cvsubsection}
 
-\subsection*{Tudor Vianu National High School of Computer Science}
-\subsubsection*{Secondary school student \hfill 2014--2018}
-\begin{itemize}
-	\item Romanian Bacalaureat Diploma with 9.61 GPA out of 10
-	\item Grade 2 in STEP I Mathematics
-	\item Graduated with 9.26 GPA out of 10
-\end{itemize}
+\end{cvsection}
 
-\section*{Work Experience}
-\subsection*{Qube Research \& Technologies}
-\subsubsection*{Quantitative Technologist \hfill Apr 2021--Sep 2021}
-\begin{itemize}
-	\item Developed, implemented, and packaged an automated test harness to aid in \textbf{low
-	latency testing}, based on a server-worker architecture, using \textbf{Python}
-	and \textbf{React (Typescript)}.
-	\item Developed a console based application for monitoring cache usage and misses on a
-	per-core and per-process basis for Intel processors, using \textbf{C++} and official Intel APIs.
-	\item Maintained constant communication with both the trading team as well as the technical team
-	to develop and test new ideas, aiming to increase performance of low latency trading algorithms
-	deployed on \textbf{Red Hat}-based Linux operating systems
-	\item Observed and interacted with a modern, cutting edge, low latency trading pipeline in its
-	entirety
-\end{itemize}
-
-\subsection*{Netcraft}
-\subsubsection*{Computer Scientist \hfill Jul 2019--Oct 2020}
-\begin{itemize}
-	\item Maintained and extended Netcraft's \textbf{anti-phishing} takedown
-	solution, gaining practical \textbf{Perl} experience, website \textbf{security scanning}
-	solution (Perl), and anti-phishing \textbf{Android application}, using \textbf{Java}
-	and modern Android application development tools, over the course of three internships
-\end{itemize}
-
-\section*{pre-college experience}
-
-\subsection*{HaikuOS}
-\begin{itemize}
-	\item Ported numerous programs and libraries from Linux to
-	      \href{https://www.haiku-os.org/}{HaikuOS}
-	\item Integrated the ported software with the HaikuOS package manager
-	      (HaikuDepot)
-\end{itemize}
-
-\subsection*{Technical Committee Member, Romanian Master of Informatics \hfill
-	2015, 2016 and 2017}
-\begin{itemize}
-	\item Administered a network of Linux servers used to host and facilitate
-	      the event
-\end{itemize}
-
-\subsection*{Technical Committee Chairman, infO(1) Cup \hfill 2017 and 2018}
-\begin{itemize}
-	\item Implemented extensive functionality to core software used in the event
-	\item Administered a network of Linux servers used to host and facilitate
-	      the event
-\end{itemize}
-
-\section*{Awards}
-
-\begin{itemize}
-	\item \textbf{Google Code-In} 2016, Finalist
-	\item \textbf{NASA Ames Space Settlement Design Contest} 2016, 2015, Second Prize and First
-	      Prize respectively as part of team Zora, acting as Research and
-	      Communications Officer
-\end{itemize}
-
-\section*{Skills}
-
-\subsection*{Programming Languages}
-\begin{itemize}
-	\item Confident with \textbf{Java}/\textbf{Kotlin} and \textbf{Python},
-	previous experience with \textbf{JavaScript}/\textbf{TypeScript}, \textbf{C},
-	\textbf{PHP}, \textbf{Haskell}, \textbf{Perl}, \textbf{SQL}
-	\item Confident with common markup languages such as \textbf{HTML},
-	      \textbf{CSS}, \textbf{{\LaTeX}}, etc.
-	\item Able to learn new languages and technologies rapidly and effectively,
-	      in order to quickly adapt to new requirements
-\end{itemize}
-
-\subsection*{Technical Skills}
-\begin{itemize}
-	\item \textbf{Software Development} --- Able to write high-quality code, using
-	      appropriate languages, libraries, frameworks and algorithms and debug,
-	      maintain and build upon existing code
-	\item \textbf{Linux}
-
-	\begin{itemize}
-		\item Have experience using nad maintaining \textbf{Red Hat}-like distributions (e.g.
-		\textbf{CentOS, Rocky Linux}), including writing \textbf{RPM} specfiles to facilitate
-		reproducible software installations
-		\item Confident in using the command line, scripting, using traditional development
-		tools such as Git, administering networks of servers
-	\end{itemize}
-\end{itemize}
-
-\subsection*{Languages}
-\begin{itemize}
-	\item Native \textbf{Romanian}
-	\item Fluent \textbf{English} (CAE C2)
-\end{itemize}
+\begin{cvsection}{Skills \& Technologies}
+	\begin{cvsubsection}{}{}{}
+		\begin{itemize}
+			\item Programming languages: \textbf{C\#, TypeScript, Rust, JavaScript, Kotlin, Java, Python}
+			\item Web development: \textbf{ASP.NET Core, React, HTML, CSS, SASS}
+			\item Cloud infrastructure: \textbf{Google Cloud Platform, Microsoft Azure, Terraform, Kubernetes, Docker}
+			\item Linux system administration: \textbf{RHEL, Ubuntu, shell scripting, RPM/DEB packaging}
+			\item Database management systems: \textbf{MongoDB, PostgreSQL, MySQL}
+			\item Software development:
+			      \begin{itemize}
+				      \item Able to write high-quality code, using appropriate technologies and tools, libraries,
+				            and algorithms.
+				      \item Able to integrate in software development teams and to adapt to the team's workflow.
+				      \item Used to working with common collaboration tools common in software development such as \textbf{Git,
+					            Kanban boards (YouTrack), and online code review tools}.
+			      \end{itemize}
+			\item Languages:
+			      \begin{itemize}
+				      \item \textbf{English} (fluent)
+				      \item \textbf{Romanian} (native)
+			      \end{itemize}
+		\end{itemize}
+	\end{cvsubsection}
+\end{cvsection}
 
 \end{document}
